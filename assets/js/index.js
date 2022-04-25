@@ -72,7 +72,7 @@
             const resizeDetections = faceapi.resizeResults(detections, canvasSize)  
             
             //comparador da face
-            const faceMatcher = new faceapi.FaceMatcher(labels, 0.7)
+            const faceMatcher = new faceapi.FaceMatcher(labels, 0.80)
             const results = resizeDetections.map(d =>
                 faceMatcher.findBestMatch(d.descriptor)
             )
@@ -84,7 +84,7 @@
             faceapi.draw.drawDetections(canvas, resizeDetections)   
     
             //desenha os traços do rosto
-            //faceapi.draw.drawFaceLandmarks(canvas, resizeDetections) 
+            faceapi.draw.drawFaceLandmarks(canvas, resizeDetections) 
             
             //desenha as expressoes faciais
             faceapi.draw.drawFaceExpressions(canvas, resizeDetections)

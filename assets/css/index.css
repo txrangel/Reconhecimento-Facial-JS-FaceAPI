@@ -1,13 +1,36 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(0, 0, 0);
 }
-
+.cabecalho{
+    height: 20%;
+    font-family: 'Segoe UI';
+    background-color: rgb(255, 0, 0);
+}
+.conteudo{
+    background-color: rgb(255, 255, 255);
+    height: 70%;
+}
+.texto{
+    font-family: 'Verdana';
+}
+.video{
+    align-items: center;
+    padding: 20;
+}
 canvas{
     position: absolute;
+}
+.rodape{
+    background-color: rgb(139, 139, 139);
+    height: 10%;
+}
+.footer{
+    color: white;
+    font-family: 'Times';
+    font-size: small;
 }

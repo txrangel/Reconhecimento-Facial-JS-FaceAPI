@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,18 @@
         <link rel="stylesheet" href="./assets/css/index.css">
     </head>
     <body>
-        <table>
-            <tr>
-                <td>
-                    <h1 width="640">Camera</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <video autoplay id="camera" width="640" height="480" muted></video>
-                </td>
-            </tr>
-        </table>
+        <div class="corpo">
+            <div class="cabecalho">
+                <div class="titulo"> Esse é um projeto de reconhecimento facial, usando uma API de JS chama FaceAPI</div>
+            </div>
+            <div class="conteudo">
+                <div class="texto">Aproxime seu rosto abaixo 📷🙂:</div>
+                <div class="video"><video autoplay id="camera" width="640" height="480" muted></video></div>
+            </div>
+            <div class="rodape">
+                <footer class="footer">Desevolvido por João Vitor Rangel</footer>
+            </div>
+        </div>
         <script src="./assets/lib/face-api.js/face-api.min.js"></script>
         <script src="./assets/js/index.js"></script>
     </body>
