@@ -1,33 +1,46 @@
 body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
+    display: block;
+    background-image: linear-gradient(rgb(182, 255, 255), rgb(55, 255, 255));
 }
-.cabecalho{
-    height: 20%;
+header{
+    top: 10px;
     font-family: 'Segoe UI';
+    color: rgba(0, 0, 0, 0.8);
 }
-.conteudo{
-    height: 70%;
+.corpo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: max-content;
+    color: rgb(0, 82, 82);
 }
-.texto{
-    font-family: 'Verdana';
+fieldset{
+    border: 3px solid rgb(55, 255, 255);
+}
+legend{
+    border: 1px solid rgb(55, 255, 255);
+    padding: 7px;
+    text-align: center;
+    background-color: rgb(55, 255, 255);
+    border-radius: 7px;
 }
 .video{
     align-items: center;
-    padding: 20;
+    justify-content: center;
 }
 canvas{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 20px;
 }
-.rodape{
-    height: 10%;
-}
-.footer{
-    color: rgb(0, 0, 0);
-    font-family: 'Times';
+.legenda{
     font-size: small;
+    font-family: 'Segoe UI';
+    color: rgb(55, 255, 255);
 }

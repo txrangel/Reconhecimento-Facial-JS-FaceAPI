@@ -7,17 +7,15 @@
         <link rel="stylesheet" href="./assets/css/index.css">
     </head>
     <body>
+        <header>
+            <h1>Esse é um projeto de reconhecimento facial usando uma API de JS, chama-se FaceAPI.</h1>
+        </header>
         <div class="corpo">
-            <div class="cabecalho">
-                <div class="titulo"> Esse é um projeto de reconhecimento facial, usando uma API de JS chama FaceAPI</div>
-            </div>
-            <div class="conteudo">
-                <div class="texto">Aproxime seu rosto abaixo 📷🙂:</div>
-                <div class="video"><video autoplay id="camera" width="640" height="480" muted></video></div>
-            </div>
-            <div class="rodape">
-                <footer class="footer">Desevolvido por João Vitor Rangel</footer>
-            </div>
+            <fieldset>
+                <legend><b>Aproxime seu rosto abaixo 📷🙂:</b></legend>
+                <video class="video" autoplay id="camera" width="640" height="480" muted></video>
+                <figcaption class="legenda"><b>Desevolvido por João Vitor Rangel</b></figcaption>
+            </fieldset>
         </div>
         <script src="./assets/lib/face-api.js/face-api.min.js"></script>
         <script src="./assets/js/index.js"></script>
